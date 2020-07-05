@@ -22805,7 +22805,7 @@
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   /* Style for "Oval" */
-  background-color: #ddf7ea;
+  background-color: rgba(179,212,252,0.85);
   border-radius: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23114,7 +23114,7 @@
           box-shadow: 0 10px 60px rgba(35, 44, 39, 0.05);
   border-radius: 10px;
   border: 1px solid #e5e5e5;
-  background-color: #ffffff;
+  background-color: rgba(179,212,252,0.85);
   position: relative;
   overflow: hidden;
 }
@@ -23428,5 +23428,13 @@
   .ft-newsletter-box button {
     width: 60px;
   }
+}
+
+body {
+  color : rgba(179,212,252,0.85)
+}
+
+.hyperlinks {
+  color : blue !important;
 }
 /*# sourceMappingURL=style.css.map */
