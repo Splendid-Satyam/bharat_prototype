@@ -5,7 +5,7 @@
   padding-bottom: 60px;
   text-align: center;
   .title-sm-text{
-    color: #fff;
+    color: rgba(179,212,252,0.85);
     font-size: 15px;
     font-weight: 700;
     letter-spacing: 2.81px;
@@ -13,7 +13,7 @@
     margin-bottom: 40px;
   }
   h2 {
-    color: #ffffff;
+    color: rgba(179,212,252,0.85);
     font-family: $secondary-font;
     font-weight: 700;
     font-size: 35px;
@@ -39,7 +39,7 @@
       color: #1f1f1f;
     }
     P{
-      color: #666666;
+      color: green;
     }
   }
 }
