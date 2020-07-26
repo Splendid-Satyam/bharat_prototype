@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title></title>
+
+ 
+  
   <!-- Plugins CSS -->
   <link rel="stylesheet" href="./plugins/bootstrap-4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="./plugins/meanmenu/meanmenu.css">
@@ -18,7 +21,11 @@
   <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="./css/settings.css">
   <link rel="stylesheet" href="./css/style.css">
+
+  
+
   <link rel="icon" type="img/x-icon" style="width: 50px; height: 50px;" href="favicon.png" >
+  
   <style>
 
     body {
@@ -47,7 +54,77 @@
     b {
       color : green ;
     }
+
+
+  .dropbtn {
+  
+  color: rgb(7, 2, 87);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  }
+
+  .dropup {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropup-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    bottom: 50px;
+    z-index: 1;
+  }
+
+  .dropup-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropup-content a:hover {background-color: #ccc}
+
+  .dropup:hover .dropup-content {
+    display: block;
+  }
+
+  .dropup:hover .dropbtn {
+    background-color: #2980B9;
+  }
+
   </style>
+
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+
+<!-- <script>
+  /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+  </script> -->
+
 </head>
 
 <body >
@@ -61,13 +138,13 @@
   <header class="site-header position-relative">
         <div class="container">
             <div class="row justify-content-center align-items-center position-relative">
+              
                 <div class="col-sm-3 col-6 col-lg-2 col-xl-2 order-lg-1">
-                  <!-- Brand Logo -->
-                    <div class="brand-logo">
+                    <div class="brand-logo hero-btn" >
                         <a href="https://www.youtube.com/channel/UC8tmJH3tyJT249NpNAUymzQ?view_as=subscriber"><img src="bharat.png" style="text-align: left;" alt="" /></a>
-                    </div>
+                    </div> 
                 </div>
-
+                
                 
                 <!-- Menu Block -->
                 <!-- <div class="col-sm-1 col-6 col-lg-6 col-xl-6 offset-lg-2  position-static order-lg-2">
@@ -278,19 +355,58 @@
         <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
           <div class="card-body">
               <ul class="course-inline-list">
-                <li><a href="https://ekaro.in/enkr2020070743088723">
-                      <i class="icon icon-check-2"></i>
-                        <b>Topwear</b>  :  
-                        <a href="https://clnk.in/le6h" target="_"> &nbsp;&nbsp;&nbsp;   T shirts</a>   
-                        <a href="https://ekaro.in/enkr2020070743088898"> &nbsp;&nbsp;&nbsp;   Casual Shirts</a> 
-                        <a href="https://ekaro.in/enkr2020070743089141"> &nbsp;&nbsp;&nbsp;   Formal Shirts</a>
-                        <a href="https://ekaro.in/enkr2020070743089305"> &nbsp;&nbsp;&nbsp;   Sweatshirts</a> 
-                        <a href="https://ekaro.in/enkr2020070743089459"> &nbsp;&nbsp;&nbsp;   Sweaters</a> 
-                        <a href="https://ekaro.in/enkr2020070743089582"> &nbsp;&nbsp;&nbsp;   Jackets</a>
-                        <a href="https://ekaro.in/enkr2020070743089727"> &nbsp;&nbsp;&nbsp;   Blazers & Coats</a> 
-                        <a href="https://ekaro.in/enkr2020070743089936"> &nbsp;&nbsp;&nbsp;   Suits</a> 
-                        <a href="https://ekaro.in/enkr2020070843102762"> &nbsp;&nbsp;&nbsp;   Rain-jackets</a>  
-                    </a></li>
+                <li>
+                      
+                         
+
+
+
+                      <!-- <div class="hero-btn"><a href="#categories" class="btn btn--orange btn--hover-shine" style="background-color: rgba(202, 245, 11, 0.85);">Get Started</a></div> -->
+                           
+                          
+
+
+
+                           <div style="font-size: 18px;" type="button" data-toggle="collapse" data-target="#demo"><b>Topwear</b></div>
+                           <div id="demo" class="collapse">
+                          </div>
+                          <a href="https://clnk.in/le6h"> &nbsp;&nbsp;&nbsp;   T shirts</a> 
+                          <a href="https://ekaro.in/enkr2020070743088898"> &nbsp;&nbsp;&nbsp;   Casual Shirts</a> 
+                          <a href="https://ekaro.in/enkr2020070743089141"> &nbsp;&nbsp;&nbsp;   Formal Shirts</a> 
+                          <a href="https://ekaro.in/enkr2020070743089305"> &nbsp;&nbsp;&nbsp;   Sweatshirts</a>  
+                          <a href="https://ekaro.in/enkr2020070743089459"> &nbsp;&nbsp;&nbsp;   Sweaters</a>  
+                          <a href="https://ekaro.in/enkr2020070743089582"> &nbsp;&nbsp;&nbsp;   Jackets</a> 
+                          <a href="https://ekaro.in/enkr2020070743089727"> &nbsp;&nbsp;&nbsp;   Blazers & Coats</a>  
+                          <a href="https://ekaro.in/enkr2020070743089936"> &nbsp;&nbsp;&nbsp;   Suits</a>  
+                          <a href="https://ekaro.in/enkr2020070843102762"> &nbsp;&nbsp;&nbsp;   Rain-jackets</a> 
+
+
+
+
+                          <!-- <div class="dropdown">
+                            <button type="button" data-toggle="dropdown"><b> Dropdown Example</b>
+                            <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">HTML</a></li>
+                              <li><a href="#">CSS</a></li>
+                              <li><a href="#">JavaScript</a></li>
+                            </ul>
+                          </div> -->
+
+
+<!-- 
+
+                        <div class="dropdown">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown button
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              
+                    
+                        </div>
+                      </div> -->
+                    
+                  </li>
                 <li><a href="https://ekaro.in/enkr2020070743090374">
                       <i class="icon icon-check-2"></i>
                         <b>Bottomwear</b>  :
@@ -599,7 +715,7 @@
                         <a href="https://ekaro.in/enkr2020071143216506"> &nbsp;&nbsp;&nbsp;   Trackpants & pyjamas</a> 
                         <a href="https://ekaro.in/enkr2020071143216675"> &nbsp;&nbsp;&nbsp;   Innerwear & Sleepwear</a>     
                     </a>
-                    </li>
+                    </li><br>
 
                     <li><a href="https://ekaro.in/enkr2020071143217007">
                       <i class="icon icon-check-2"></i>
@@ -821,50 +937,82 @@
             <div class="card-body">
                 <ul class="course-inline-list">
                 
-                  <li><a href="https://ekaro.in/enkr2020070943154881">
+                  <li>
                         <i class="icon icon-check-2"></i>
-                         <b>Television</b>  :  
-                          <a href="https://ekaro.in/enkr2020070943154916"> &nbsp;&nbsp;&nbsp;   Full HD</a> 
-                          <a href="https://ekaro.in/enkr2020070943154947"> &nbsp;&nbsp;&nbsp;   HD Ready</a>   
-                          <a href="https://ekaro.in/enkr2020070943154979"> &nbsp;&nbsp;&nbsp;   Ultra HD (4K)</a>     
-                      </a></li>
-                      <li><a href="https://ekaro.in/enkr2020070943144026">
+                          
+                        <div class="dropup">
+                          <button class="dropbtn">Televison</button>
+                          <div class="dropup-content">
+                            <a href="https://ekaro.in/enkr2020070943154916"> &nbsp;&nbsp;&nbsp;   Full HD</a> 
+                            <a href="https://ekaro.in/enkr2020070943154947"> &nbsp;&nbsp;&nbsp;   HD Ready</a>   
+                            <a href="https://ekaro.in/enkr2020070943154979"> &nbsp;&nbsp;&nbsp;   Ultra HD (4K)</a>
+                          </div>
+                        </div>
+
+                         <!-- <div class="dropdown">
+                          <button onclick="myFunction()" class="dropbtn">Television</button>
+                          <div id="myDropdown" class="dropdown-content">
+                          </div>
+                        </div> -->
+                          
+                    </li>
+                      <li>
                         <i class="icon icon-check-2"></i>
-                         <b>Washing Machines</b>  :  
-                          <a href="https://ekaro.in/enkr2020070943144134"> &nbsp;&nbsp;&nbsp;   Fully Automatic Front Load</a> 
-                          <a href="https://ekaro.in/enkr2020070943144103"> &nbsp;&nbsp;&nbsp;   Semi Automatic Top Load</a> 
-                          <a href="https://ekaro.in/enkr2020070943144180"> &nbsp;&nbsp;&nbsp;   Fully Automatic Top Load</a>
-                          <a href="https://ekaro.in/enkr2020070943144236"> &nbsp;&nbsp;&nbsp;   Washer only</a>
-                          <a href="https://ekaro.in/enkr2020070943144250"> &nbsp;&nbsp;&nbsp;   Washer with Dryer</a>   
-                      </a></li>
-                      <li><a href="https://ekaro.in/enkr2020070943155137">
+
+                        <div class="dropup">
+                          <button class="dropbtn">Washing Machines</button>
+                          <div class="dropup-content">
+                            <a href="https://ekaro.in/enkr2020070943144134"> &nbsp;&nbsp;&nbsp;   Fully Automatic Front Load</a> 
+                            <a href="https://ekaro.in/enkr2020070943144103"> &nbsp;&nbsp;&nbsp;   Semi Automatic Top Load</a> 
+                            <a href="https://ekaro.in/enkr2020070943144180"> &nbsp;&nbsp;&nbsp;   Fully Automatic Top Load</a>
+                            <a href="https://ekaro.in/enkr2020070943144236"> &nbsp;&nbsp;&nbsp;   Washer only</a>
+                            <a href="https://ekaro.in/enkr2020070943144250"> &nbsp;&nbsp;&nbsp;   Washer with Dryer</a>  
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <i class="icon icon-check-2"></i> 
+                        <div class="dropup">
+                          <button class="dropbtn">Air Conditioners</button>
+                          <div class="dropup-content">
+                            <a href="https://ekaro.in/enkr2020070943155216"> &nbsp;&nbsp;&nbsp;   Inverter AC</a> 
+                            <a href="https://ekaro.in/enkr2020070943155162"> &nbsp;&nbsp;&nbsp;   Split AC</a> 
+                            <a href="https://ekaro.in/enkr2020070943155180"> &nbsp;&nbsp;&nbsp;   Window AC</a>  
+                          </div>
+                        </div>
+                        
+                      </li>
+                      <li>
                         <i class="icon icon-check-2"></i>
-                         <b>Air Conditioners</b>  :  
-                          <a href="https://ekaro.in/enkr2020070943155216"> &nbsp;&nbsp;&nbsp;   Inverter AC</a> 
-                          <a href="https://ekaro.in/enkr2020070943155162"> &nbsp;&nbsp;&nbsp;   Split AC</a> 
-                          <a href="https://ekaro.in/enkr2020070943155180"> &nbsp;&nbsp;&nbsp;   Window AC</a>  
-                      </a></li>
-                      <li><a href="https://ekaro.in/enkr2020070943155339">
+                        <div class="dropup">
+                          <button class="dropbtn">Refridgerators</button>
+                          <div class="dropup-content">
+                            <a href="https://ekaro.in/enkr2020070943155578"> &nbsp;&nbsp;&nbsp;   Single Door</a> 
+                            <a href="https://ekaro.in/enkr2020070943155645"> &nbsp;&nbsp;&nbsp;   Double Door</a> 
+                            <a href="https://ekaro.in/enkr2020070943155426"> &nbsp;&nbsp;&nbsp;   Side by Side</a>
+                            <a href="https://ekaro.in/enkr2020070943155516"> &nbsp;&nbsp;&nbsp;   Top Freezer</a>   
+                          </div>
+                        </div>
+                         
+                         
+                     </li>
+                      <li>
                         <i class="icon icon-check-2"></i>
-                         <b>Refrigerators</b>  :  
-                          <a href="https://ekaro.in/enkr2020070943155578"> &nbsp;&nbsp;&nbsp;   Single Door</a> 
-                          <a href="https://ekaro.in/enkr2020070943155645"> &nbsp;&nbsp;&nbsp;   Double Door</a> 
-                          <a href="https://ekaro.in/enkr2020070943155426"> &nbsp;&nbsp;&nbsp;   Side by Side</a>
-                          <a href="https://ekaro.in/enkr2020070943155516"> &nbsp;&nbsp;&nbsp;   Top Freezer</a>   
-                      </a></li>
-                      <li><a href="https://ekaro.in/enkr2020070943163740">
-                        <i class="icon icon-check-2"></i>
-                         <b>Small Home Appliances</b>  :  
-                          <a href="https://ekaro.in/enkr2020070943163795"> &nbsp;&nbsp;&nbsp;   Irons</a> 
-                          <a href="https://ekaro.in/enkr2020070943164485"> &nbsp;&nbsp;&nbsp;   Water Purifiers</a> 
-                          <a href="https://ekaro.in/enkr2020071043173873"> &nbsp;&nbsp;&nbsp;   Fans</a>
-                          <a href="https://ekaro.in/enkr2020070943164308"> &nbsp;&nbsp;&nbsp;   Air Coolers</a>
-                          <a href="https://ekaro.in/enkr2020070943166210"> &nbsp;&nbsp;&nbsp;   Inverters</a>
-                          <a href="https://ekaro.in/enkr2020070943164596"> &nbsp;&nbsp;&nbsp;   Vacuum Cleaners</a>
-                          <a href="https://ekaro.in/enkr2020070943164928"> &nbsp;&nbsp;&nbsp;   Sewing Machines</a>
-                          <a href="https://ekaro.in/enkr2020070943166334"> &nbsp;&nbsp;&nbsp;   Voltage Stabilizers</a>
-                          <a href="https://ekaro.in/enkr2020070943166252"> &nbsp;&nbsp;&nbsp;   Water Geysers</a>   
-                      </a></li>
+                        <div class="dropup">
+                          <button class="dropbtn">Small Home Appliances</button>
+                          <div class="dropup-content">
+                            <a href="https://ekaro.in/enkr2020070943163795"> &nbsp;&nbsp;&nbsp;   Irons</a> 
+                            <a href="https://ekaro.in/enkr2020070943164485"> &nbsp;&nbsp;&nbsp;   Water Purifiers</a> 
+                            <a href="https://ekaro.in/enkr2020071043173873"> &nbsp;&nbsp;&nbsp;   Fans</a>
+                            <a href="https://ekaro.in/enkr2020070943164308"> &nbsp;&nbsp;&nbsp;   Air Coolers</a>
+                            <a href="https://ekaro.in/enkr2020070943166210"> &nbsp;&nbsp;&nbsp;   Inverters</a>
+                            <a href="https://ekaro.in/enkr2020070943164596"> &nbsp;&nbsp;&nbsp;   Vacuum Cleaners</a>
+                            <a href="https://ekaro.in/enkr2020070943164928"> &nbsp;&nbsp;&nbsp;   Sewing Machines</a>
+                            <a href="https://ekaro.in/enkr2020070943166334"> &nbsp;&nbsp;&nbsp;   Voltage Stabilizers</a>
+                            <a href="https://ekaro.in/enkr2020070943166252"> &nbsp;&nbsp;&nbsp;   Water Geysers</a>   
+                          </div>
+                        </div> 
+                      </li>
                 </ul>
             </div>
           </div>
@@ -944,6 +1092,177 @@
               </div>
             </div>
             </div>
+
+
+
+
+            <div class="card course-card"  data-aos="fade-up" data-aos-duration="2000" data-aos-once="true" data-aos-delay="600">
+              <div class="card-header" id="heading9">
+                <div class="row">
+                    <div class="col-lg-6">
+                      <div class="acc-left-content d-flex">
+                        <div class="acc-icon">
+                          <img src="https://image.flaticon.com/icons/png/512/1617/1617590.png" style="width: 69px; height:69px;" alt="">
+                        </div>
+                        <div class="acc-head-contents">
+                          <h3 style="color: darkblue;">Grocery & Daily needs</h3>
+                          <p style="color: green;">Shop for any KITCHEN Products ranging from Kitchen Appliances to Cookware Products made by <B>INDIAN BRANDS</B>.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 offset-lg-2">
+                      <div class="acc-right-content d-flex">
+                        
+                        <button class="btn acc-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapse9" aria-expanded="true" aria-controls="collapse9">
+                          <div class="course-length-badge">
+                            <span>Sub-Categories</span>
+                            <span>4</span> 
+                          </div>&nbsp;&nbsp;
+                          <i class="icon icon-minimal-down"></i>
+                        </button>
+                      </div>
+                    </div>
+                </div>
+                
+              </div>
+          
+              <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordionExample">
+                <div class="card-body">
+                    <ul class="course-inline-list">
+                      <li><a href="">
+                        <i class="icon icon-check-2"></i>
+                         <b>Fruits & Vegetables</b>  :  
+                          <a href=""> &nbsp;&nbsp;&nbsp;   Fresh Vegetables</a> 
+                          <a href=""> &nbsp;&nbsp;&nbsp;   Herbs & Seasonings</a> 
+                          <a href=""> &nbsp;&nbsp;&nbsp;   Fresh Fruits</a>
+                          <a href=""> &nbsp;&nbsp;&nbsp;   Exotic Fruits & Veggies</a> 
+                          <a href=""> &nbsp;&nbsp;&nbsp;   Organic Fruits & Vegetables</a>
+                          <a href=""> &nbsp;&nbsp;&nbsp;   Cuts & Sprouts</a>
+                          <a href=""> &nbsp;&nbsp;&nbsp;   Flower Bouquets, Bunches</a>    
+                        </a></li>
+                        <li><a href="">
+                            <i class="icon icon-check-2"></i>
+                            <b>Foodgrains, Oil & Masala </b>  :  
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Dals & Pulses</a> 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Atta, Flours & Sooji</a> 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Rice & Rice Products</a>
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Salt, Sugar & Jaggery</a>
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Edible Oils & Ghee</a>
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Masalas & Spices</a>
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Organic Staples</a>
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Dry Fruits </a>
+                        </a></li>
+                          <li><a href="">
+                            <i class="icon icon-check-2"></i>
+                             <b>Bakery, Cakes & Dairy</b>  :   
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Dairy</a> 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Breads & Buns</a> 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Gourmet Breads</a>
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Ice Creams & Desserts</a> 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Cookies, Rusk & Khari</a>   
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Bakery Snacks</a>   
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Cakes & Pastries</a>    
+                          </a></li>
+                          <li><a href="">
+                            <i class="icon icon-check-2"></i>
+                            <b>Beverages</b>   :   
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Energy & Soft Drinks</a> 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Water</a> 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Tea</a> 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Health Drink, Supplement</a> 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Fruit Juices & Drinks</a> 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Coffee</a>  
+                          </a></li>
+                          
+                          <li><a href="">
+                            <i class="icon icon-check-2"></i>
+                             <b>Snacks & Branded Foods</b>  : 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Noodle, Pasta, Vermicelli</a> 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Frozen Veggies & Snacks</a> 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Breakfast Cereals</a>
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Biscuits & Cookies</a> 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Spreads, Sauces, Ketchup</a> 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Snacks & Namkeen</a> 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Ready To Cook & Eat</a> 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Chocolates & Candies</a>
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Pickles & Chutney</a> 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Indian Mithai</a>    
+                          </a></li>
+                          <li><a href="">
+                            <i class="icon icon-check-2"></i>
+                             <b>Beauty & Hygiene</b>  :
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Oral Care</a> 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Bath & Hand Wash</a> 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Feminine Hygiene</a>
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Health & Medicine</a> 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Hair Care</a>    
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Men's Grooming</a> 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Skin Care</a> 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Fragrances & Deos</a>
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Makeup</a> 
+                               
+                          </a></li>
+                          <li><a href="">
+                            <i class="icon icon-check-2"></i>
+                             <b>Cleaning & Household</b>  : 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Detergents & Dishwash</a> 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   All Purpose Cleaners</a> 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Disposables, Garbage Bag</a>
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Fresheners & Repellents</a> 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Mops, Brushes & Scrubs</a> 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Stationery</a> 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Pooja Needs</a> 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Bins & Bathroom Ware</a>
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Party & Festive Needs</a> 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Car & Shoe Care</a>    
+                          </a></li>
+                          <li><a href="">
+                            <i class="icon icon-check-2"></i>
+                             <b>Eggs, Meat & Fish</b>  : 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Eggs</a> 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Poultry</a> 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Fish & Seafood</a>
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Mutton & Lamb</a> 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Sausages, Bacon & Salami</a>
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Pork & Other Meats</a> 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Marinades</a>    
+                          </a></li>
+                          <li><a href="">
+                            <i class="icon icon-check-2"></i>
+                             <b>Gourmet & World Food</b>  : 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Oils & Vinegar</a> 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Snacks, Dry Fruits, Nuts</a> 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Dairy & Cheese</a>
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Pasta, Soup & Noodles</a> 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Sauces, Spreads & Dips</a>  
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Drinks & Beverages</a> 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Chocolates & Biscuits</a> 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Cereals & Breakfast</a>
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Cooking & Baking Needs</a> 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Tinned & Processed Food</a>    
+                          </a></li>
+                          <li><a href="">
+                            <i class="icon icon-check-2"></i>
+                             <b>Kitchen, Garden & Pets</b> :
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Appliances & Electricals</a> 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Pet Food & Accessories</a> 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Cookware & Non Stick</a>
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Kitchen Accessories</a> 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Storage & Accessories</a>  
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Steel Utensils</a> 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Crockery & Cutlery</a> 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Bakeware</a>
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Gardening</a> 
+                              <a href=""> &nbsp;&nbsp;&nbsp;   Flask & Casserole</a>   
+
+                          </a></li>
+                    </ul>
+                </div>
+              </div>
+              </div>
+
+
+
 
 
             <div class="card course-card"  data-aos="fade-up" data-aos-duration="2000" data-aos-once="true" data-aos-delay="600">
@@ -1168,25 +1487,20 @@
         <br>
         <div class="hero-btn"><a href="" class="btn btn--orange btn--hover-shine" style="background-color: rgba(202, 245, 11, 0.85);">Enter Feedback</a></div>
       </div>
-
-      
-      <!-- AddToAny BEGIN -->
-<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-  <a class="a2a_dd" href="https://bit.ly/2ZLLpyh"></a>
-  <a href="https://bit.ly/2ZLLpyh" class="a2a_button_whatsapp"></a>
-  <a href="https://bit.ly/2ZLLpyh" class="a2a_button_facebook"></a>
-  <a class="a2a_button_twitter"></a>
-  <a class="a2a_button_copy_link"></a>
-  </div>
-  <script async src="https://static.addtoany.com/menu/page.js"></script>
-  <!-- AddToAny END -->
-
-
-
     </div>
   </div>
 </div>
 
+
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style" style="display: flex; justify-content: center;">
+  <h5><b>Share Our Work</b> &nbsp; &nbsp; &nbsp;</h5>
+  <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+  <a class="a2a_button_whatsapp"></a>
+  <a class="a2a_button_facebook"></a>
+  <a class="a2a_button_twitter"></a>
+  <a class="a2a_button_copy_link"></a>
+  </div>
+  <script async src="https://static.addtoany.com/menu/page.js"></script>
 
 <!-- Aurthor Starts -->
 <div class="aurthor-section">
@@ -1507,22 +1821,29 @@
 </div>
 </div>
 
-
+  
   <!-- Vendor JS-->
+
   <script src="./plugins/jquery/jquery.min.js"></script>
   <script src="./plugins/jquery/jquery-migrate.min.js"></script>
   <script src="./plugins/bootstrap-4.3.1/js/bootstrap.bundle.js"></script>
 
+  
   <!-- Plugins JS -->
   <script src="./plugins/meanmenu/jquery.meanmenu.js"></script>
   <script src="./plugins/slick-1.8.1/slick.min.js"></script>
   <script src="./plugins/fancybox-master/jquery.fancybox.min.js"></script>
   <script src="./plugins/aos-animation/aos.js"></script>
 
+  
   <!-- Custom JS -->
   <script src="./js/active.js"></script>
 
+
+  <!--Bootstrap-->
+  
 </div>
+
 </body>
 
 </html>
